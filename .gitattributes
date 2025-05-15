@@ -1,2 +1,1 @@
 covid-tracker-project/owid-covid-data.csv filter=lfs diff=lfs merge=lfs -text
-owid-covid-data.csv filter=lfs diff=lfs merge=lfs -text

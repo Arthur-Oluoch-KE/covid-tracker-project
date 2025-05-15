@@ -1,0 +1,89 @@
+# COVID-19 Global Data Tracker
+
+This Jupyter notebook provides an interactive analysis of global COVID-19 trends using the [Our World in Data](https://ourworldindata.org/covid-cases) dataset. It enables users to select countries and date ranges for customized exploration of cases, deaths, and vaccinations.
+
+## Features
+
+- **Data Loading & Cleaning**: Imports and preprocesses the latest COVID-19 data.
+- **User Input**: Allows selection of countries and date ranges for focused analysis.
+- **Exploratory Data Analysis (EDA)**: Computes key metrics and descriptive statistics.
+- **Visualizations**:
+    - Line charts for total cases, deaths, and vaccinations over time.
+    - Bar charts comparing total cases by country.
+    - Interactive choropleth map of global cases.
+- **Key Insights**: Summarizes important findings from the analysis.
+
+## How to Use
+
+1. **Install Dependencies**  
+     Ensure you have the following Python libraries installed:
+     - pandas
+     - matplotlib
+     - seaborn
+     - plotly
+
+     You can install them with:
+     ```
+     pip install pandas matplotlib seaborn plotly
+     ```
+
+2. **Download the Dataset**  
+     Download `owid-covid-data.csv` from [Our World in Data](https://github.com/owid/covid-19-data/tree/master/public/data).
+
+3. **Run the Notebook**  
+     Open the notebook in Jupyter and execute the cells.  
+     - You will be prompted to enter countries (comma-separated) and a date range (YYYY-MM-DD).
+     - The notebook will validate your input and proceed with the analysis.
+
+## Notebook Workflow
+
+1. **Data Loading & Exploration**  
+     - Loads the dataset and previews its structure.
+     - Checks for missing values.
+
+2. **User Input**  
+     - Prompts for country selection and date range.
+     - Validates input.
+
+3. **Data Cleaning**  
+     - Filters data by selected countries and dates.
+     - Handles missing values via interpolation.
+
+4. **Exploratory Data Analysis**  
+     - Calculates death rates and descriptive statistics.
+     - Summarizes total cases, deaths, and vaccinations by country.
+
+5. **Visualizations**  
+     - Line charts for trends over time.
+     - Bar chart for country comparison.
+     - Choropleth map for global overview.
+
+6. **Key Insights**  
+     - Highlights trends, anomalies, and vaccination progress.
+
+## Example Visualizations
+
+- ![Total Cases Over Time](total_casesovertime.png)
+- ![Total Deaths Over Time](total_deaths.png)
+- ![Total Vaccinations Over Time](total_vaccinations.png)
+- ![Total Cases by Country](total_casesbycountry.png)
+
+## Key Insights
+
+1. **Case Trends**: Kenya showed the highest total cases among the selected countries.
+2. **Death Rates**: Kenya had a notably higher death rate.
+3. **Vaccination Progress**: Tanzania led in vaccination rollout.
+4. **Anomalies**: A spike in new cases in Kenya (2021-09 to 2022-05) was observed.
+5. **Global Perspective**: The choropleth map highlights regions with the highest case density.
+
+## Extending the Project
+
+- Build an interactive dashboard with [Streamlit](https://streamlit.io/).
+- Incorporate additional metrics such as hospitalizations if available.
+
+## License
+
+This project uses public COVID-19 data from [Our World in Data](https://ourworldindata.org/covid-cases).
+
+---
+*Created by Arthur*
